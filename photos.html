@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Albums - Garden State Heavyweights</title>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Garden State Heavyweights logo" class="brand-logo">
+      <span class="brand-text">Garden State Heavyweights<span>BASKETBALL PROGRAM</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="photos.html">Photo Albums</a></li>
+      <li><a href="roster.html">Team / Roster</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li><a href="forms.html">Forms</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero page-hero">
+  <div class="container">
+    <h1>Photo Albums</h1>
+    <p>Browse team photos by season and year. Select a season and year below to view that album.</p>
+  </div>
+</section>
+
+<section id="featured">
+  <h2 class="section-title">Featured Photos</h2>
+  <div class="accent-bar"></div>
+  <div class="featured-grid">
+    <div class="featured-photo"><img class="lightbox-img" src="assets/images/pic2.jpg" alt="Heavyweights player dunking in a game"></div>
+    <div class="featured-photo"><img class="lightbox-img" src="assets/images/team-photo.jpg" alt="Heavyweights team group photo"></div>
+    <div class="featured-photo"><img class="lightbox-img" src="assets/images/team-huddle.jpg" alt="Heavyweights team huddle during a game"></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Browse by Season</h2>
+  <div class="accent-bar"></div>
+  <div class="filter-bar">
+    <div class="filter-group">
+      <label for="season-select">Season</label>
+      <select id="season-select">
+        <option value="Winter">Winter</option>
+        <option value="Spring">Spring</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="year-select">Year</label>
+      <select id="year-select">
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024" selected>2024</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="gallery-grid" id="gallery-grid">
+    <!-- Photo tiles rendered by main.js from assets/js/gallery-data.js -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-brand">Garden State Heavyweights Basketball Program</div>
+  <div>Contacts: President Michael Howell : (732-770-6684) gshbasketball@gmail.com</div>
+</footer>
+
+<script src="assets/js/gallery-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

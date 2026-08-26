@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team / Roster - Garden State Heavyweights</title>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Garden State Heavyweights logo" class="brand-logo">
+      <span class="brand-text">Garden State Heavyweights<span>BASKETBALL PROGRAM</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="photos.html">Photo Albums</a></li>
+      <li><a href="roster.html">Team / Roster</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li><a href="forms.html">Forms</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero page-hero">
+  <div class="container">
+    <h1>Team &amp; Roster</h1>
+    <p>Select a grade, gender, and level to view that team's coaching staff and player roster.</p>
+  </div>
+</section>
+
+<section id="roster-section">
+  <div class="filter-bar">
+    <div class="filter-group">
+      <label for="grade-select">Grade</label>
+      <select id="grade-select">
+        <option value="3">3rd Grade</option>
+        <option value="4">4th Grade</option>
+        <option value="5">5th Grade</option>
+        <option value="6">6th Grade</option>
+        <option value="7">7th Grade</option>
+        <option value="8">8th Grade</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="gender-select">Gender</label>
+      <select id="gender-select">
+        <option value="Boys">Boys</option>
+        <option value="Girls">Girls</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="level-select">Level</label>
+      <select id="level-select">
+        <option value="A">A Team</option>
+        <option value="B">B Team</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="coach-panel" id="coach-panel">
+    <!-- Coach cards rendered by main.js -->
+  </div>
+
+  <div class="roster-table-wrap">
+    <table class="roster-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player Name</th>
+        </tr>
+      </thead>
+      <tbody id="roster-body">
+        <!-- Player rows rendered by main.js -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-brand">Garden State Heavyweights Basketball Program</div>
+  <div>Contacts: President Michael Howell : (732-770-6684) gshbasketball@gmail.com</div>
+</footer>
+
+<script src="assets/js/roster-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
