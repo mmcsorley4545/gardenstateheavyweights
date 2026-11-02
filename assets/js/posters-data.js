@@ -19,9 +19,9 @@
 const POSTERS = [
   {
     icon: "",
-    image: "assets/images/posters/FallTryouts.jpg",
-    title: "Fall Tryouts",
-    text: "Monday 8/24 - Saturday 8/29 Tryouts. Click for more information."
+    image: "assets/images/posters/Winter_Travel.png",
+    title: "Winter Tryouts",
+    text: "Monday 11/9 & Tuesday 11/10 Tryouts. Click for more information."
   },
   {
     icon: "",
